@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Pokémon - Akinator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <section id="tela-inicial">
+            <h1>Descubra seu Pokémon Interior</h1>
+            <p>Bem-vindo ao universo fictício de Kanto! Responda às perguntas e descubra se você é um Pikachu, Squirtle ou Charizard.</p>
+            <button id="btn-iniciar" class="btn-principal">Começar Jornada</button>
+        </section>
+
+        <section id="tela-quiz" class="hidden">
+            <header>
+                <span id="progresso">Pergunta 1 de 10</span>
+            </header>
+            <h2 id="pergunta-texto">Texto da Pergunta</h2>
+            <div id="opcoes-container">
+                </div>
+            <div class="controles">
+                <button id="btn-voltar" class="btn-secundario hidden">Voltar</button>
+            </div>
+        </section>
+
+        <section id="tela-resultado" class="hidden">
+            <h2 id="resultado-titulo">Você é o...</h2>
+            <img id="resultado-img" src="" alt="Imagem do Pokémon">
+            <p id="resultado-pontuacao"></p>
+            <p id="resultado-desc"></p>
+            <button id="btn-reiniciar" class="btn-principal">Recomeçar</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
